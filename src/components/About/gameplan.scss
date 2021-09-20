@@ -1,0 +1,124 @@
+@import '../../style/global.scss';
+
+
+.bg{
+	background:$mainBlack;
+	overflow: hidden;
+	max-width: 100vw;
+	height:100vh;
+	z-index: 40;
+}
+
+.gamebg-1 {
+	object-fit: cover;
+	margin-left: 1vw;
+	opacity: 0.1;
+	width: 20vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 50;
+	object-position: 20% 0;
+}
+
+.gamebg-2 {
+	object-fit: cover;
+	opacity: 0.1;
+	width: 20vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 50;
+	-webkit-transform: translate(100%,0);
+	transform: translate(105%,0);
+	object-position: 50% 0%;	
+}
+
+.gamebg-3 {
+	object-fit: cover;
+	opacity: 0.1;
+	width: 19vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 50;
+	-webkit-transform: translate(200%,0);
+	transform: translate(215%,0);
+}
+
+.gamebg-4 {
+	object-fit: cover;
+	opacity: 0.1;
+	width: 19vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 50;
+	-webkit-transform: translate(300%,0);
+	transform: translate(315%,0);
+	object-position: 15% 0;
+}
+
+.gamebg-5 {
+	object-fit: cover;
+	opacity: 0.1;
+	width: 19vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 50;
+	-webkit-transform: translate(400%,0);
+	transform: translate(415%,0);
+}
+
+.wrap{
+	position:relative;
+	z-index: 100;
+
+}
+
+.qualitylist{
+	width: 35vw;
+	max-width: 1250px;
+	margin: 0 auto;
+	text-decoration: none;
+	// padding: 1rem 2rem 1rem 2rem;
+    
+    }
+
+    .quality-info{
+	padding:1rem 1rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	text-align: center;
+	
+    }
+    
+    .quality-links{
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	text-align: center;
+	display: inline-flex;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	height: 8vh;
+	overflow: hidden;
+	padding: 1.5vh;
+	justify-content: center;
+	background-color: $mainBlack;
+    }
+
+    
+    
+    .quality-link{
+	color: $mainGrey;
+	text-decoration: none;
+	font-size: 20px;
+	transition: all 0.3s linear;
+	&:hover{
+	    color:$mainYellow;
+	    text-decoration: none;
+	    transform: translateY(-2px);
+	}
+    }
+
+
+

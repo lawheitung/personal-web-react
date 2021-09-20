@@ -1,0 +1,94 @@
+@import '../style/global.scss';
+.text-center{
+    background-color: $mainBlack;
+    min-height: 100vh;
+}
+
+ .row2{
+     display: inline-grid;
+     grid-template-columns: 1fr 1fr;
+     padding-top:30vh;
+     padding-bottom: 2rem;
+ }
+
+
+ .col1{
+     font-family: $title;
+     text-transform: uppercase;
+     text-align: right;
+     padding-right: 1.5rem;
+     padding-bottom: 1rem;
+     padding-top: 1.5rem;
+     border-right: 3px solid $mainDarkGrey;
+     max-width:15rem;
+
+ }
+
+ .col2{
+     font-family:$content;
+     text-transform: capitalize;
+     text-align: left;
+     padding-left: 1.5rem;
+     justify-items: center;
+     align-items: center;
+     font-size: medium;
+     padding-top: 3rem;
+}
+
+
+a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+    color: $mainBlue;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+    outline: 0;
+    transition: all .3s;
+    background: #444;
+    &:hover{
+        color: #fff
+    }
+    
+}
+
+a.social :hover{
+    transform: translateY(-2px);
+}
+
+.twitter{
+    &:hover, &:focus, &:active{
+    background-color: rgb(85, 172, 238);
+    }
+
+}
+
+.linkedin{
+    &:hover, &:focus, &:active{
+        background-color: rgb(0, 123, 181);
+    }
+}
+  
+.github{
+    &:hover, &:focus, &:active{
+    background-color: #9541C8;
+    }
+}
+
+.email{
+    &:hover, &:focus, &:active{
+        background-color: rgb(221, 221, 221);
+    }
+    
+}
+
+.copyright{
+    color: $mainWhite;
+    font-family: $title;
+    padding-top: 2rem;
+}

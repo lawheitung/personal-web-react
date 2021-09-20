@@ -1,0 +1,30 @@
+
+@import "../../../style/global.scss";
+
+
+
+
+.mapboxgl-popup {
+	max-width: 300px;
+    }
+    p {
+	    font-size: 11px;
+    }
+    .mapboxgl-popup-content {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: $mainBlack;
+	border-radius: 0.5rem;
+	font-size: 13px;
+	font: $company;
+    }
+
+    .mapboxgl-popup-close-button{
+	    padding-right: 5px;
+	    font-size: 12px;
+    }
+
+
+
+      
+

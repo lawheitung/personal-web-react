@@ -1,0 +1,38 @@
+@import '../style/global.scss';
+
+.sectionHeader{
+	margin: 4vh 20vh 0 20vh;
+}
+
+.titlecontainer{
+	padding-top: 4rem;
+}
+
+
+.titlecontainer p {
+	display: flex;
+	width: 15%;
+	margin-bottom: 0%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+
+.titlecontainer p::before, p::after{
+	content:'';
+	border-top: 3px solid $mainYellow;
+	margin: 0 10px 0 0;
+	flex: 1 0 10px;
+	color: $mainYellow;
+
+}
+
+
+.titlecontainer p::after{
+	margin: 0 0 0 10px;
+
+}
+
+
