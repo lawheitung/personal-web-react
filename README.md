@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Install dependencies
+
+```npm install```
+```npm install react-bootstrap@next bootstrap@5.0.2```
+```npm install --save node-sass```
+```npm install --save react-icons```
+```npm install --save react-map-gl```
+```npm install --save react-router-dom```
+```npm install --save styled-components```
+
 ## Available Scripts
 
 In the project directory, you can run:

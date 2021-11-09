@@ -1,4 +1,4 @@
-@import '../style/global.scss';
+@import '../../style/global.scss';
 
 $firstColor:rgba(44, 214, 236, 0.829);
 $secondColor: rgba(78, 4, 66, 0.822);
@@ -6,7 +6,12 @@ $thirdColor: rgba(0, 0, 0, 0.7);
 $forthColor: rgba(236, 135, 76, 0.596);
 $fifthColor: rgba(19, 47, 122, 0.7);
 
+.disclaimer{
+  margin-top: 60px;
+  margin-left: 20px;
+  font-size: 12;
 
+}
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
 * {

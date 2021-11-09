@@ -5,7 +5,9 @@ import {FaEnvelope, FaFonticons} from 'react-icons/fa'
 import {FaLinkedinIn} from 'react-icons/fa'
 import {FaTwitter} from 'react-icons/fa'
 import {IoLogoGithub} from 'react-icons/io'
+import {FaGithub} from 'react-icons/fa'
 import { Linebreaker, Pace, WindupChildren, Pause, useWindupString } from 'windups'
+import reactDom from 'react-dom'
 
 const MyName = () => {
     return (
@@ -20,10 +22,22 @@ const MyName = () => {
           <Pace ms={150}>
             <h1>
               <em>{"Tiffany Law"}</em>
-            </h1> 
+            </h1>
           </Pace>
-        
-        </WindupChildren>
+          <div class='disclaimer'>
+          <Pace ms={80}>
+            
+            <h6>
+              This website is still under development </h6> 
+              
+              <h6>
+              – check out <a target="_blank" href="https://github.com/users/lawheitung/projects/2"> <FaGithub/> </a> 
+            for the raodmap
+            </h6>
+
+          </Pace>
+          </div>         
+        </WindupChildren> 
     );
 }  
 
@@ -34,16 +48,16 @@ export default function Hero ({img,max}) {
                 <div class="hero">
                 <ul class="hero-social">
                   <li>
-                      <a class="hero-social-icon twitter" href="#"><FaTwitter/><span>Twitter</span></a>
+                      <a class="hero-social-icon twitter" target="_blank" href="https://twitter.com/lawheitungg?lang=en"><FaTwitter/><span>Twitter</span></a>
                   </li>
                   <li>
-                    <a class="hero-social-icon github" href="#"><IoLogoGithub/><span>Github</span></a>
+                    <a class="hero-social-icon github" target="_blank" href="https://github.com/lawheitung"><IoLogoGithub/><span>Github</span></a>
                   </li>
                   <li>
-                    <a class="hero-social-icon linkedin" href="#"><FaLinkedinIn/><span>LinkedIn</span></a>
+                    <a class="hero-social-icon linkedin" target="_blank" href="https://www.linkedin.com/in/tiffanylaw429/"><FaLinkedinIn/><span>LinkedIn</span></a>
                   </li>
                   <li>
-                    <a class="hero-social-icon email" href="#"><FaEnvelope/><span>Email</span></a>
+                    <a class="hero-social-icon email" target="_blank" href='https://www.google.com'><FaEnvelope/><span>Email</span></a>
                   </li>
                   <li>
                       <a class="navtext" href="#">
@@ -76,7 +90,7 @@ export default function Hero ({img,max}) {
 
                 </div>
                 </div>
-            </div>
+              </div>
 
 
             
