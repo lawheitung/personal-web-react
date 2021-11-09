@@ -4,6 +4,7 @@ import { IconContext } from 'react-icons/lib'
 import styled from 'styled-components'
 import {TiFeather} from 'react-icons/ti'
 import {NavLink} from 'react-router-dom'
+import {Link} from 'react-scroll'
 
 
 const Navbar = () => {
@@ -38,19 +39,19 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLink to="/">Home</NavLink>
+                <NavLinks to="/">Home</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLink to="/about">About</NavLink>
+                <NavLinks to="/about">About</NavLinks>
+              </NavItem>
+              {/* <NavItem>
+                <NavLinks to="/experience">Experience</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLink to="/experience">Experience</NavLink>
-              </NavItem>
+                <NavLinks to="/resume">Resume</NavLinks>
+              </NavItem> */}
               <NavItem>
-                <NavLink to="/resume">Resume</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLinks to="/contact">Contact</NavLinks>
               </NavItem>
             </NavMenu>
           </NavbarContainer>
@@ -159,6 +160,7 @@ export const NavLinks = styled(NavLink)`
   font-family: "Ubuntu", sans-serif;
   &:hover {
      color: #1DF098;
+     text-decoration: none;
   }
   @media screen and (max-width: 960px) {
     text-align: center;
@@ -171,131 +173,3 @@ export const NavLinks = styled(NavLink)`
     }
   }
 `
-
-
-// import React, { useEffect, useState } from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
-// import AppBar from '@material-ui/core/AppBar';
-// import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-// import {Link} from 'gatsby'
-// import Toolbar from '@material-ui/core/Toolbar';
-// import Typography from '@material-ui/core/Typography';
-// import Button from '@material-ui/core/Button';
-// import IconButton from '@material-ui/core/IconButton';
-// import MenuIcon from '@material-ui/icons/Menu';
-// import './navbar.scss';
-// import {FaAlignCenter, FaAlignRight} from 'react-icons/fa'
-// import styled from 'styled-components'
-// import { createTheme } from '@material-ui/core/styles';
-
-
-// const theme = createTheme({
-//   palette: {
-//     primary: {
-//       light: '#000000',
-//       main: '#000000',
-//       dark: '#002884',
-//       contrastText: '#000000',
-//     },
-//     secondary: {
-//       light: '#ff7961',
-//       main: '#f44336',
-//       dark: '#ba000d',
-//       contrastText: '#000',
-//     },
-//   },
-// });
-
-
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//         flexGrow: 1,
-//     },
-//     menuButton: {
-//         marginRight: theme.spacing(2),
-//         color: 'black'
-//     },
-//     title: {
-//         flexGrow: 1,
-//         color: 'black'
-//     },
-//     appBarTransparent: {
-//         backgroundColor: 'transparent'
-//     },
-//     appBarSolid: {
-//         backgroundColor: '#1e1e2f'
-//     }
-// }));
-
-// export default function ButtonAppBar() {
-//     const classes = useStyles();
-
-//     const [navBackground, setNavBackground] = useState('appBarTransparent')
-//     const navRef = React.useRef()
-//     navRef.current = navBackground
-//     useEffect(() => {
-//         const handleScroll = () => {
-//             const show = window.scrollY > 310
-//             if (show) {
-//                 setNavBackground('appBarSolid')
-//             } else {
-//                 setNavBackground('appBarTransparent')
-//             }
-//         }
-//         document.addEventListener('scroll', handleScroll)
-//         return () => {
-//             document.removeEventListener('scroll', handleScroll)
-//         }
-//     }, [])
-
-//     return (
-//       // <div className="format-sticky">
-
-//         <div className={classes.root}>
-//             <AppBar elevation={0} position="fixed" className={classes[navRef.current]}>
-//             {/* <Breadcrumbs aria-label="breadcrumb">
-//                 <Link color="inherit" href="/">
-//                   Material-UI
-//                 </Link>
-//                 <Link color="inherit" href="/getting-started/installation/" >
-//                   Core
-//                 </Link>
-//                 <Typography color="textPrimary">Breadcrumb</Typography>
-//               </Breadcrumbs> */}
-//               <div className="navbar">
-//                 <nav className="navbar">
-//                    <div className="nav-center">
-//             <div className="nav-header">
-//               <button
-//                 type="button"
-//                 className="nav-btn"
-
-//               >
-//                 <FaAlignCenter className="nav-icon" />
-//               </button>
-//             </div>
-//             <ul>
-//             <Breadcrumbs aria-label="breadcrumb">d
-//                 <Link to="/getting-started/installation/" >
-//                   Home
-//                 </Link>
-//                 <Link to="/about" >
-//                   About
-//                 </Link>
-//                 <Link to="/experience" >
-//                   Experience
-//                 </Link>
-//                 <Link to="/resume" >
-//                   Resume
-//                 </Link>
-//                 </Breadcrumbs>  
-//             </ul>
-//           </div>
-//         </nav>
-//         </div>
-//             </AppBar>
-//         </div >
-
-//       // </div>
-//     );
-// }

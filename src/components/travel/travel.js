@@ -2,12 +2,12 @@ import React, { Component,useRef, useEffect, useState } from 'react'
 
 import MapGL, { Marker,NavigationControl, Popup, FullscreenControl,ScaleControl, GeolocateControl} from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import IntroLine from "../../intro"
+import IntroLine from "../intro"
 import './travel.scss'
 
 import Pins from './Pins';
 import CityInfo from './CityInfo';
-import CITIES from '../../../cities.json'
+import CITIES from '../../cities.json'
 
 const ICON = `M20.2,15.7L20.2,15.7c1.1-1.6,1.8-3.6,1.8-5.7c0-5.6-4.5-10-10-10S2,4.5,2,10c0,2,0.6,3.9,1.6,5.4c0,0.1,0.1,0.2,0.2,0.3
         c0,0,0.1,0.1,0.1,0.2c0.2,0.3,0.4,0.6,0.7,0.9c2.6,3.1,7.4,7.6,7.4,7.6s4.8-4.5,7.4-7.5c0.2-0.3,0.5-0.6,0.7-0.9
@@ -15,33 +15,33 @@ const ICON = `M20.2,15.7L20.2,15.7c1.1-1.6,1.8-3.6,1.8-5.7c0-5.6-4.5-10-10-10S2,
 
 const SIZE = 30;
 
-        const MAPBOX_TOKEN ='pk.eyJ1IjoibGF3aGVpdHVuZyIsImEiOiJjazh0dHMxNzEwNDEzM21vM2Z2M2FsbjljIn0.y1ygmbLRRSswPtVrQsMBUQ'
+const MAPBOX_TOKEN ='pk.eyJ1IjoibGF3aGVpdHVuZyIsImEiOiJjazh0dHMxNzEwNDEzM21vM2Z2M2FsbjljIn0.y1ygmbLRRSswPtVrQsMBUQ'
 
-        const geolocateStyle = {
-          top: 0,
-          left: 0,
-          padding: '10px'
-        };
+const geolocateStyle = {
+  top: 0,
+  left: 0,
+  padding: '10px'
+};
 
-        const fullscreenControlStyle = {
-          top: 36,
-          left: 0,
-          padding: '10px'
-        };
+const fullscreenControlStyle = {
+  top: 36,
+  left: 0,
+  padding: '10px'
+};
 
-        const navStyle = {
-          top: 72,
-          left: 0,
-          padding: '10px'
-        };
+const navStyle = {
+  top: 72,
+  left: 0,
+  padding: '10px'
+};
 
-        const scaleControlStyle = {
-          bottom: 36,
-          left: 0,
-          padding: '10px'
-        };
+const scaleControlStyle = {
+  bottom: 36,
+  left: 0,
+  padding: '10px'
+};
 
-const Travel = () =>{
+export default function Travel (){
 
     const [viewport, setViewport] = useState({
       latitude: 30,
@@ -107,4 +107,3 @@ const Travel = () =>{
 	)
 }
 
-export default Travel

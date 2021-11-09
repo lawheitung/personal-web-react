@@ -8,9 +8,9 @@ import {IoLogoGithub} from 'react-icons/io'
 
 export default function Contact () {
         return (
-            <footer className="text-center">
+            <footer data-aos="fade-up" data-aos-delay="700" className="text-center">
                 <row>
-                <div data-sal="slide-up" className="row2">
+                <div className="row2">
                     <div className="col1">
                         <h2 >
                             let's connect
@@ -26,16 +26,16 @@ export default function Contact () {
                 </div>
                 </div>
                 <div className="social-container">
-                    <a href="https://twitter.com/lawheitungg" className="twitter social">
+                    <a href="https://twitter.com/lawheitungg" target="_blank" className="twitter social">
                         <FaTwitter/>
                     </a>
-                    <a href="https://github.com/lawheitung" className="github social">
+                    <a href="https://github.com/lawheitung" target="_blank" className="github social">
                     <IoLogoGithub/>
                     </a>
-                    <a href="https://www.linkedin.com/in/tiffanylaw429/" className="linkedin social">
+                    <a href="https://www.linkedin.com/in/tiffanylaw429/" target="_blank" className="linkedin social">
                         <FaLinkedinIn/>
                     </a>
-                    <a href="mailto:webmaster@example.com" className="email social" size="2x">
+                    <a href="mailto:webmaster@example.com" target="_blank" className="email social" size="2x">
                         <FaEnvelope/>
                     </a>
                 </div>   

@@ -41,7 +41,7 @@ export default Gameplan
 
 const Qualities = ({ quote, link} ) => {
         return (
-            <session data-sal="slide-up" className="quality-info">
+            <session data-aos="fade-up" className="quality-info">
                 <button className="quality-links">
 
 			<a className='quality-link' href = {link} target="_blank">{quote}</a>
@@ -50,3 +50,47 @@ const Qualities = ({ quote, link} ) => {
             </session>
         )
     }
+
+// import React, { Component } from 'react'
+// import './qualitylist.scss'
+// // import Qualities from '../Qualities/Qualities'
+// import {qualityDatas} from '../../qualityDatas'
+
+
+// export default function QualityList () {
+
+//         return (
+//             <div className="backgroundColor2">
+//                 <div className="qualitylist">
+//                     <div class="sectionHeader2">
+//                         <span class="header2 ver1">
+//                             <strong>My game plan</strong>
+//                         </span>
+// 		            </div>
+//                 </div>
+                
+//                 <section className="qualitylist">
+//                 {
+//                     qualityDatas.map( (qualityData) => {
+//                         return (
+//                             <Qualities key= { qualityData.id } {...qualityData } />
+//                         );
+//                     })
+//                 }
+                
+//                 </section>
+//             </div> 
+            
+//         )
+//     }
+
+
+// function Qualities ({ id, quote, link} ) {
+//         return (
+//             <session className="quality-info">
+//                 <div className="quality-links">
+//                     <a className='quality-link' href = {link} target="_blank">{quote}</a>
+//                 </div>
+//             </session>
+//         )
+//     }
