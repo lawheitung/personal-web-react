@@ -1,5 +1,49 @@
+$mainBlack: #09161d;
+$mainBlue: rgb(14, 101, 201);
+$mainWhite: #fff;
+$mainGrey: #E9EBEE;
+$mainDarkGrey: #616771;
+$mainLightBlue: #051318;
+$title: 'Bitter', serif;
+$content: 'Alegreya Sans', sans-serif;
+$company: 'Cinzel', serif;
+$mainYellow: #1df098;
 
-@import "../../style/global.scss";
+// .scroll-container-main{
+//   scroll-snap-type: y mandatory;
+//   overflow-y: scroll;
+
+// }
+
+// .scroll-container-main div {
+//   scroll-snap-align: start;
+// }
+
+
+// reset some browser default styles
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: $mainBlack;
+  color: $mainWhite;
+}
+
+.component-container{
+  height:100vh;
+}
+
+.center-content{
+  margin: 0 20vh 0 20vh;
+}
+
+.content{
+	padding-top: 10vh;
+}
 
 
 
