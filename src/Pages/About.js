@@ -1,10 +1,10 @@
 import React from 'react';
-import JourneyList from '../Components/journey/journey';
-import QualityList from '../Components/gameplan/gameplan';
-import FencingList from '../Components/fencing/fencing';
-import Hero from '../Components/hero/hero'
-import Contact from '../Components/contact'
-import TravelList from '../Components/travel/travel'
+import JourneyList from '../components/journey/journey';
+import QualityList from '../components/gameplan/gameplan';
+import FencingList from '../components/fencing/fencing';
+import Hero from '../components/hero/hero'
+import Contact from '../components/contact'
+import TravelList from '../components/travel/travel'
 
 export default function About(){
 

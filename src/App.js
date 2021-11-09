@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './App.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Navbar from './Components/navbar'
+import Navbar from './components/Navbar'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Resume from './Pages/Resume'
