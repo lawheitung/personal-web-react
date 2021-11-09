@@ -4,8 +4,6 @@ import { IconContext } from 'react-icons/lib'
 import styled from 'styled-components'
 import {TiFeather} from 'react-icons/ti'
 import {NavLink} from 'react-router-dom'
-import {Link} from 'react-scroll'
-
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
